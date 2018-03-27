@@ -1,0 +1,225 @@
+/* simple padding/margin reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  /* -webkit-font-smoothing: antialiased; */
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  outline: none;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+button {
+  font-size: 12px;
+  align-self: center;
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+/* Header */
+
+header {
+  height: 82px;
+  background: #4C64A4;
+  border-bottom: 1px solid rgb(27, 44, 33);
+}
+
+.header-logo {
+  margin-right: auto;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-indent: -1000px;
+  width: 170px;
+  height: 34px;
+  background: no-repeat url(../images/fb-logo.png);
+  background-size: contain;
+}
+
+.login-form {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.login-form div {
+  margin-right: 18px;
+}
+
+.login-form label {
+  color: white;
+}
+
+.login-form input {
+  display: block;
+  width: 148px;
+  height: 24px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.login-form a {
+  color: #9cb4d8;
+}
+
+.submit-button:hover {
+  background-color: #305399;
+}
+
+/* Section */
+
+section {
+  background-color: #E9EBEE;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.find-account h2 {
+  font-size: 16px;
+  color: #162643;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.find-account p {
+  margin-left: 65px;
+}
+
+.find-account input{
+  margin-top: 5px;
+  margin-left: 65px;
+  width: 261px;
+  padding: 4px;
+  border: 1px solid  #ccc;
+}
+
+.find-account > div {
+  margin: 0 auto;
+  width: 555px;
+}
+
+.find-account > div:first-child {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.find-account > div:last-child {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-button,
+.cancel-button {
+  float: right;
+}
+
+.cancel-button {
+  margin-left: 10px;
+  background-color: #f6f7f9;
+  border: 1px solid #ced0d4;
+  color: #4b4f56;
+}
+
+.search-button:hover {
+  background-color: #305399;
+}
+
+.cancel-button:hover {
+  background-color: #dbdde0;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer > ul::after {
+content: "";
+display: block;
+height: 1px;
+margin: 8px 0;
+width: 95%;
+border-bottom: 1px solid #dddfe2;
+}
+
+.footer li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer a {
+  color: #365899;
+  line-height: 2;
+}
+
+.footer p {
+  color: #737373;
+  margin: 16px 0;
+}
