@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -74,8 +74,11 @@ header {
   border-bottom: 1px solid rgb(27, 44, 33);
 }
 
+header .flex-wrapper {
+  justify-content: space-between;
+}
+
 .header-logo {
-  margin-right: auto;
   align-self: flex-end;
   margin-bottom: 10px;
 }
